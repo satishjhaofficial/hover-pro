@@ -1,0 +1,27 @@
+[
+    {
+        "menuname": "Home",
+        "menulink": "#",
+        "hassubmenu": false
+    },
+    {
+        "menuname": "About Us",
+        "menulink": "#",
+        "hassubmenu": false
+    },
+    {
+        "menuname": "Products",
+        "menulink": "#",
+        "hassubmenu": false
+    },
+    {
+        "menuname": "Services",
+        "menulink": "#",
+        "hassubmenu": false
+    },
+    {
+        "menuname": "Contact us",
+        "menulink": "#",
+        "hassubmenu": false
+    }
+]

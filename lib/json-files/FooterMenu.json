@@ -1,0 +1,77 @@
+[
+    {
+        "explore": 
+        [
+            {
+                "menuname": "About us",
+                "menulink": "about"
+            },
+            {
+                "menuname": "Blog",
+                "menulink": "#"
+            },
+            {
+                "menuname": "Our Designs",
+                "menulink": "our-designs"
+            },
+            {
+                "menuname": "Store Locator",
+                "menulink": "store"
+            },
+            {
+                "menuname": "General FAQs",
+                "menulink": "faq"
+            },
+            {
+                "menuname": "Print on Demand",
+                "menulink": "print-on-demand-uk"
+            }
+        ]
+    },
+    {
+        "resources": 
+        [
+            {
+                "menuname": "Privacy Policy",
+                "menulink": "privacy-policy"
+            },
+            {
+                "menuname": "Terms & Conditions*",
+                "menulink": "terms-conditions"
+            },
+            {
+                "menuname": "Contact Us",
+                "menulink": "contact-us"
+            },
+            {
+                "menuname": "Pay Now",
+                "menulink": "payment"
+            }
+        ]
+    },
+    {
+        "products": 
+        [
+            {
+                "menuname": "Stickers Printing",
+                "menulink": "#"
+            },
+            {
+                "menuname": "Personalised Pens",
+                "menulink": "#"
+            },
+            {
+                "menuname": "Signage Printing",
+                "menulink": "#"
+            },
+            {
+                "menuname": "Large Format Printing",
+                "menulink": "#"
+            },
+            {
+                "menuname": "Commercial Printing ",
+                "menulink": "#"
+            }
+        ]
+    }
+]
