@@ -8,7 +8,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Accordion from 'react-bootstrap/Accordion';
 import ScrollToTop from "./ScrollToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faYoutube, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from 'next/link';
 
 function Footer() {
@@ -98,8 +98,10 @@ function Footer() {
             </Row>
           </Container>
         </div>
-        <ScrollToTop />
       </footer>
+      <div className='fixed-chat-box'>
+        <Link href="#" target="_blank"><a><FontAwesomeIcon icon={faWhatsapp} /> Chat With Us!</a></Link>
+      </div>
     </>
   );
 }
