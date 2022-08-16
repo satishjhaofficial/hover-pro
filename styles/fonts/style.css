@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Futura BT";
+    src: url('futura-book-bt.ttf');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Futura BT";
+    src: url('futura-medium-bt.ttf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Futura BT";
+    src: url('futura-heavy-bt.ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Bitsumishi";
+    src: url('bitsumishi.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Myriad Pro";
+    src: url('myriad-pro/myriadpro-regular.otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Myriad Pro";
+    src: url('myriad-pro/myriadpro-semibold.otf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Myriad Pro";
+    src: url('myriad-pro/myriadpro-bold.otf');
+    font-weight: 600;
+    font-style: normal;
+  }
