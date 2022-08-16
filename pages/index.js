@@ -5,6 +5,10 @@ import HomeVideo from "../src/components/home/HomeVideo";
 import HomeBestSellers from "../src/components/home/HomeBestSellers";
 import HomeFeatured from "../src/components/home/HomeFeatured";
 import HomeDeals from "../src/components/home/HomeDeals";
+import HomeInsta from "../src/components/home/HomeInsta";
+import HomeIcons from "../src/components/home/HomeIcons";
+import HomeChoose from "../src/components/home/HomeChoose";
+import HomeAbout from "../src/components/home/HomeAbout";
 
 export default function Home() {
   return (
@@ -19,6 +23,10 @@ export default function Home() {
       <HomeBestSellers />
       <HomeDeals />
       <HomeFeatured />
+      <HomeInsta />
+      <HomeIcons />
+      <HomeChoose />
+      <HomeAbout />
       
     </div>
   )

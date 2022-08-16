@@ -1,84 +1,101 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Accordion from 'react-bootstrap/Accordion';
 import ScrollToTop from "./ScrollToTop";
-import FooterMenu from '../../../lib/json-files/FooterMenu.json'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import Link from 'next/link';
 
 function Footer() {
   return (
     <>
       <footer className="footer">
-        <Container fluid>
-        <Row xs={1} md={2} lg={4}>
-          <Col>
-            <div className="footer-box">
-              <h3>Contact us</h3>
-              <p>Monday - Friday: 10:00 - 18:00</p>
-              <p><strong>P:- <span itemProp="telephone"><a href="tel:0386579428">03 8657 9428</a></span></strong></p>
-              <p><strong>E:- <span itemProp="email"><a href="mailto:info@printyo.net.au">info@printyo.net.au</a></span></strong></p>
-              <p itemProp="address" itemScope="" itemType="http://schema.org/PostalAddress"><span itemProp="streetAddress">Suite 6, 17 Comalco Ct</span>, <span itemProp="addressLocality">Thomastown, VIC</span> 3074</p>
-              <div className="footer-social">
-                <a className="fb-icon" href="https://www.facebook.com/PrintyoAustralia/" title="Facebook" target="_blank" rel="noreferrer"></a>
-                <a className="twitter-icon" href="https://twitter.com/printyo_aus" title="Twitter" target="_blank" rel="noreferrer"></a>
-                <a className="youtube-icon" href="https://www.youtube.com/channel/UC1QWa9BMRdn0VpLuBDifhBA" title="Youtube" target="_blank" rel="noreferrer"></a>
-                <a className="instagram-icon" href="https://www.instagram.com/printyoaustralia/" title="instagram" target="_blank" rel="noreferrer"></a>
-              </div>
-                <p>We Accept</p>
-                <Image src="/img/master-card.png" width={234} height={32} alt="Mastercard" />
-            </div>
-          </Col>
-          <Col>
-            <div className="footer-links">
-              <h3>Explore</h3>              
-                <ul>
-                  {FooterMenu[0].explore.map((items, i) => (
-                    <li key={i}>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /><Link href={`/${items.menulink}`}>{items.menuname}</Link>
-                  </li>
-                  )
-                  )
-                }                  
-              </ul>
-            </div>
-          </Col>
-          <Col>
-            <div className="footer-links">
-              <h3>Resources</h3>
-              <ul>
-                {FooterMenu[1].resources.map((items, i) => (
-                  <li key={i}>
-                  <FontAwesomeIcon icon={faAngleDoubleRight} /><Link href={`/${items.menulink}`}>{items.menuname}</Link>
-                </li>
-                )
-                  )
-                }                  
-              </ul>
-            </div>
-          </Col>
-          <Col>
-            <div className="footer-links">
-              <h3>Our Products</h3>
-              <ul>
-                {FooterMenu[2].products.map((items, i) => (
-                  <li key={i}>
-                  <FontAwesomeIcon icon={faAngleDoubleRight} /><Link href={`/${items.menulink}`}>{items.menuname}</Link>
-                </li>
-                )
-                  )
-                }                  
-              </ul>
-            </div>
-          </Col>
-        </Row>
+        <Container>
+          <div className="footer-row">
+            <Row>
+              <Col md={4}>
+                <div className='footer-box-1'>
+                  <div className='blue-title-sec'>
+                    <h2>Come along for the ride</h2>
+                  </div> 
+                  <p>Join us on our journey to ride fearless. Sign up to our newsletter to see behind the scenes and be first in on exciting new deals.</p>
+                  <InputGroup className="mb-3">
+                    <Form.Control
+                      type='email'
+                      placeholder='e-mail address'
+                      aria-describedby="basic-addon1"
+                    />
+                    <Button type='submit' id="button-addon1"><img src='/img/newsletter.png' alt='' /></Button>
+                  </InputGroup>
+                </div>
+              </Col>
+              <Col md={4}>
+                <div className='footer-box-2'>
+                    <Row>
+                      <Col xs={6}>
+                        <img src='/img/logo-white.png' alt='Hoverpro' />
+                      </Col>
+                      <Col xs={6}>
+                        <img src='/img/google-rating.png' alt='Google' />
+                      </Col>
+                      <Col xs={6}>
+                        <ul className='footer-social'>
+                          <li><a href='#' target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                          <li><a href='#' target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                          <li><a href='#' target="_blank"><FontAwesomeIcon icon={faYoutube} /></a></li>
+                        </ul>
+                      </Col>
+                      <Col xs={6}>
+                        <img src='/img/razorpay.png' alt='Razorpay' />
+                      </Col>
+                    </Row>
+                </div>
+              </Col>
+              <Col md={4}>
+                <Accordion>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>About Hoverpro</Accordion.Header>
+                    <Accordion.Body>
+                      <p>Hoverpro is India’s no. 1 mobility solutions company, specializing in self-balancing scooters.</p>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>Customer Services</Accordion.Header>
+                    <Accordion.Body>
+                      <p>Hoverpro is India’s no. 1 mobility solutions company, specializing in self-balancing scooters.</p>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header>Product Categories</Accordion.Header>
+                    <Accordion.Body>
+                      <ul>
+                        <li><Link href="#">Product 1</Link></li>
+                        <li><Link href="#">Product 2</Link></li>
+                        <li><Link href="#">Product 3</Link></li>
+                        <li><Link href="#">Product 4</Link></li>
+                      </ul>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Col>
+            </Row>
+          </div>
         </Container>
-        
         <div className="copyright">
           <Container>
-            <p><span>Printyo.co.uk</span> | <span>© Copyright 2017- 2022 All Rights Reserved.</span></p>
+            <Row className='align-items-center'>
+              <Col lg={6}>
+                <img src="/img/payment-options.png" alt="payment-options" />
+              </Col>
+              <Col lg={6}>
+                <p>©2021 Hover Pro. All Rights Reserved.</p>
+              </Col>
+            </Row>
           </Container>
         </div>
         <ScrollToTop />

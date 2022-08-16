@@ -19,6 +19,7 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.1.1",
     "react-dom": "18.2.0",
+    "react-ig-feed": "^1.7.0",
     "react-modal-video": "^1.2.10",
     "react-multi-carousel": "^2.6.5",
     "sass": "^1.54.4"

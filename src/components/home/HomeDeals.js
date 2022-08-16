@@ -22,7 +22,47 @@ export default function HomeFeatured() {
         <Col md={4}>
           <div className="home-deals-box">
             <span className="home-deals-sale">51%</span>
-            <div className="home-featured-img">
+            <div className="home-deals-img">
+              <img src="/img/product-image-2.png" alt="" />
+            </div>
+            <div className="home-deals-text">
+              <div className="p-3">
+                <h3>H11 Off-Road Milkyway</h3>
+                <h5><img src="/img/reviews.png" alt="reviews" /> 4.8 <span>|</span> 407 Reviews</h5>
+              </div>
+              <hr />
+              <div className="p-3">
+                <h4><s>₹34,999.00</s> ₹20,999.00</h4>
+                <p>You Save ₹ 621 (51%)</p>
+                <a className="btn btn-blue">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col md={4} className="d-none d-md-block">
+          <div className="home-deals-box">
+            <span className="home-deals-sale">51%</span>
+            <div className="home-deals-img">
+              <img src="/img/product-image-2.png" alt="" />
+            </div>
+            <div className="home-deals-text">
+              <div className="p-3">
+                <h3>H11 Off-Road Milkyway</h3>
+                <h5><img src="/img/reviews.png" alt="reviews" /> 4.8 <span>|</span> 407 Reviews</h5>
+              </div>
+              <hr />
+              <div className="p-3">
+                <h4><s>₹34,999.00</s> ₹20,999.00</h4>
+                <p>You Save ₹ 621 (51%)</p>
+                <a className="btn btn-blue">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col md={4} className="d-none d-md-block">
+          <div className="home-deals-box">
+            <span className="home-deals-sale">51%</span>
+            <div className="home-deals-img">
               <img src="/img/product-image-2.png" alt="" />
             </div>
             <div className="home-deals-text">
