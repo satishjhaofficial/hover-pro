@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "Bitsumishi";
-  src: url('/fonts/bitsumishi.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Futura BT";
   src: url('/fonts/futura-book-bt.ttf');
   font-weight: 300;
@@ -23,6 +16,13 @@
   font-family: "Futura BT";
   src: url('/fonts/futura-heavy-bt.ttf');
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bitsumishi";
+  src: url('/fonts/bitsumishi.ttf');
+  font-weight: normal;
   font-style: normal;
 }
 

@@ -29,7 +29,7 @@ function Header() {
                       alt="Logo"
                       objectFit="contain"
                       width={153}
-                      height={50}
+                      height={70}
                     />
                     </a>
                   </Link>
