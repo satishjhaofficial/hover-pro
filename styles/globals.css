@@ -21,7 +21,12 @@
 
 @font-face {
   font-family: "Bitsumishi";
-  src: url('/fonts/bitsumishi.ttf');
+  src: url('/fonts/bitsumishi/Bitsumishi.eot');
+    src: url('/fonts/bitsumishi/Bitsumishi.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/bitsumishi/Bitsumishi.woff2') format('woff2'),
+        url('/fonts/bitsumishi/Bitsumishi.woff') format('woff'),
+        url('/fonts/bitsumishi/Bitsumishi.ttf') format('truetype'),
+        url('/fonts/bitsumishi/Bitsumishi.svg#Bitsumishi') format('svg');
   font-weight: normal;
   font-style: normal;
 }

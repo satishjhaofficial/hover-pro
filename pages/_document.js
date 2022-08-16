@@ -27,7 +27,7 @@ export default function Document() {
         />
         <link
           rel="preload"
-          href="/fonts/bitsumishi.ttf"
+          href="/fonts/bitsumishi/Bitsumishi.ttf"
           as="font"
           type="font/ttf"
           crossOrigin="anonymous"
