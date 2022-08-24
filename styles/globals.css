@@ -124,7 +124,7 @@ p:empty { display: none; }
 .header-menu nav { position: relative; border-top: 0; justify-content: space-between; padding: 0; }
 /* .header-menu nav .navbar-nav { width: calc(100% - 230px); } */
 .header-menu nav .main-menu { padding: 0; margin: 0; list-style: none; display: flex; }
-.header-menu nav .main-menu >a.nav-link, .header-menu nav .main-menu > .nav-item.dropdown> a { font-size: 17px; letter-spacing: 1px; background: linear-gradient(90deg, #007ebf 0%, #00cfd6 49%, #0068ae 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: "Bitsumishi"; line-height: 1; padding: 8px 35px 8px 0; text-decoration: none; transition: color 0.2s ease; font-weight: 600; position: relative; }
+.header-menu nav .main-menu >a.nav-link, .header-menu nav .main-menu > .nav-item.dropdown> a { font-size: 15px; background: linear-gradient(90deg, #007ebf 0%, #00cfd6 49%, #0068ae 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: "Bitsumishi"; line-height: 1; padding: 8px 35px 8px 0; text-decoration: none; transition: color 0.2s ease; font-weight: 600; position: relative; }
 .header-menu nav .main-menu >li>a.nav-link:hover { color: #007ebf; }
 .header-menu nav .main-menu > .nav-item.dropdown> a:after { border: 0; background-image: url(/img/angle-down.png); width: 15px; height: 15px; background-repeat: no-repeat; background-size: 13px; top: 12px; right: 14px; position: absolute; }
 .header-menu nav .main-menu > .nav-item.dropdown.show> a:after {  }
@@ -285,6 +285,7 @@ p:empty { display: none; }
   .header-social li a { background-color: #fff; display: inline-block; color: #000; line-height: 26px; border-radius: 8px; text-align: center; height: 25px; width: 25px; }
   .header-sidebar-footer-text { margin: 30px 0 0; }
   .header-sidebar-footer-text p { background: linear-gradient(90deg, #007ebf 0%, #00cfd6 49%, #0068ae 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; font-size: 18px; }
+  .header .header-right >ul>li { margin-left: 12px; }
 }
 
 @media (prefers-color-scheme: dark) {
