@@ -8,6 +8,10 @@ import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Collapse from 'react-bootstrap/Collapse';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faYoutube, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import MenuList from '../../../lib/json-files/HeaderMenu.json'
 
 function Header() {
@@ -38,8 +42,63 @@ function Header() {
               <Col xs={3} lg={8}>
                 <div className="header-menu">
                   <Navbar expand="lg">
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                      <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Toggle aria-controls="header-sidebar-nav" />
+                    <Navbar.Offcanvas
+                      id="header-sidebar-nav"
+                      aria-labelledby="header-sidebar-nav"
+                      placement="start"
+                    >
+                      <Offcanvas.Header closeButton>
+                        <div className="header-search-box">
+                          <form name="search">
+                            <input type="text" name="product-search" id="headerserach" placeholder="Search for products" title="Search products" />
+                            <input className="search-btn" type="submit"/>
+                          </form>
+                        </div>
+                      </Offcanvas.Header>
+                      <Offcanvas.Body>
+                        <Nav className="justify-content-end flex-grow-1 pe-3">
+                          <ul className="main-menu">
+                            {MenuList.map((item, index) => (
+                              <>
+                                  {item.hassubmenu ? (
+                                  <NavDropdown
+                                    title={item.menuname}
+                                    id={`offcanvasNavbarDropdown-expand-${index}` }
+                                    className={item.megamenu? "mega-menu" : null}
+                                  >
+                                  
+                                      {item.submenu.map((items, i) => (
+                                      <NavDropdown.Item href={`${items.submenulink}`} key={i}>
+                                        {items.submenuimg? <img src={`/img/${items.submenuimg}`} alt={items.submenuname}  />                        
+                                        :  null} 
+                                        {items.submenuname? items.submenuname  :  null} 
+                                      </NavDropdown.Item> 
+                                      ))}                          
+                                
+                                </NavDropdown>
+                                ) 
+                                : <Nav.Link href={`${item.menulink}`} className={item.hassubmenu? "has-submenu" : null}>{item.menuname}</Nav.Link> }
+                                </>
+                                )
+                              )
+                            }
+                          </ul>                          
+                        </Nav>                        
+                      <div className="header-sidebar-footer">
+                        <Image src="/img/logo-white.png" width={250} height={50} objectFit="contain" alt="Hoverpro" />
+                        <ul className='header-social'>
+                          <li><a href='#' target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                          <li><a href='#' target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                          <li><a href='#' target="_blank"><FontAwesomeIcon icon={faYoutube} /></a></li>
+                        </ul>
+                        <div className="header-sidebar-footer-text">
+                            <p>Go Prepaid. Get 1000 Off.</p>
+                        </div>
+                      </div>
+                      </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                      {/* <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
                           <ul className="main-menu">
                             {MenuList.map((item, index) => (
@@ -52,7 +111,7 @@ function Header() {
                             }
                           </ul>
                         </Nav>
-                      </Navbar.Collapse>
+                      </Navbar.Collapse> */}
                     </Navbar>
                 </div>
               </Col>
@@ -79,9 +138,9 @@ function Header() {
                   </div>
                   <Collapse in={open}>
                     <div className="header-search-box" id="header-search-box">
-                      <form name="search" method="get" action="/">
-                        <input type="text" name="s" id="headerserach" placeholder="I am looking for..." title="Search products" autoComplete="off" />
-                        <input className="search-btn" type="submit" title="Search products" />
+                      <form name="search">
+                        <input type="text" name="product-search" id="headerserach" placeholder="Search for products" title="Search products" />
+                        <input className="search-btn" type="submit"/>
                       </form>
                     </div>
                   </Collapse>

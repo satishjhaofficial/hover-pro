@@ -16,7 +16,7 @@ export default function BannerSection() {
         {SliderList.map((item, index) => (
           <Carousel.Item key={index}>
             <img
-              src={`/img/${item.imgurl}`}
+              src={`${item.imgurl}`}
               alt="personalised-mugs-banner"
             />
             {item.caption?.map((items, i) => (
