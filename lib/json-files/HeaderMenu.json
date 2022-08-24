@@ -1,26 +1,107 @@
 [
     {
-        "menuname": "Home",
+        "menuname": "Products",
         "menulink": "#",
-        "hassubmenu": false
+        "hassubmenu": true,
+        "megamenu": true,
+        "submenu": 
+        [
+            {
+                "submenulink": "#",
+                "submenuimg": "product-img-1.png"
+            },
+            {
+                "submenulink": "#",
+                "submenuimg": "product-img-2.png"
+            },
+            {
+                "submenulink": "#",
+                "submenuimg": "product-img-3.png"
+            }
+        ]
     },
     {
         "menuname": "About Us",
         "menulink": "#",
-        "hassubmenu": false
+        "hassubmenu": true,
+        "submenu": 
+        [
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            }
+        ]
     },
     {
-        "menuname": "Products",
+        "menuname": "Deal of the month",
         "menulink": "#",
-        "hassubmenu": false
+        "hassubmenu": true,
+        "submenu": 
+        [
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            }
+        ]
     },
     {
-        "menuname": "Services",
+        "menuname": "Premium (top brand)",
         "menulink": "#",
-        "hassubmenu": false
+        "hassubmenu": true,
+        "submenu": 
+        [
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            }
+        ]
     },
     {
-        "menuname": "Contact us",
+        "menuname": "Accessories",
+        "menulink": "#",
+        "hassubmenu": true,
+        "submenu": 
+        [
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            },
+            {
+                "submenuname": "Hoverpro Hoverboards",
+                "submenulink": "#"
+            }
+        ]
+    },
+    {
+        "menuname": "Login",
         "menulink": "#",
         "hassubmenu": false
     }
