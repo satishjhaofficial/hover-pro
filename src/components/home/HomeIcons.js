@@ -8,25 +8,25 @@ export default function HomeIcons() {
     <section className="home-icons-sec">
       <Container>
         <Row>
-          <Col xs={3}>
+          <Col md={3}>
             <div className="home-icons-box">
                 <img src="/img/emi.png" alt="Easy Emi Available" />
                 <h3>Easy Emi Available</h3>
             </div>
           </Col>
-          <Col xs={3}>
+          <Col md={3}>
             <div className="home-icons-box">
                 <img src="/img/free-shipping.png" alt="Free Shipping in India" />
                 <h3>Free Shipping in India</h3>
             </div>
           </Col>
-          <Col xs={3}>
+          <Col md={3}>
             <div className="home-icons-box">
                 <img src="/img/warranty.png" alt="1 Year Exclusive Warranty" />
                 <h3>1 Year Exclusive Warranty</h3>
             </div>
           </Col>
-          <Col xs={3}>
+          <Col md={3}>
             <div className="home-icons-box">
                 <img src="/img/cash-on-delivery.png" alt="Cash on Delivery" />
                 <h3>Cash on Delivery</h3>

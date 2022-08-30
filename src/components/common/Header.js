@@ -66,6 +66,7 @@ function Header() {
                                     title={item.menuname}
                                     id={`offcanvasNavbarDropdown-expand-${index}` }
                                     className={item.megamenu? "mega-menu" : null}
+                                    key={index}
                                   >
                                   
                                       {item.submenu.map((items, i) => (
@@ -93,6 +94,7 @@ function Header() {
                           <li><a href='#' target="_blank"><FontAwesomeIcon icon={faYoutube} /></a></li>
                         </ul>
                         <div className="header-sidebar-footer-text">
+                            <h5><img src="/img/tag.png" alt="Best Offer"/>Best Offer</h5>
                             <p>Go Prepaid. Get 1000 Off.</p>
                         </div>
                       </div>
