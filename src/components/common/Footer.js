@@ -18,7 +18,7 @@ function Footer() {
         <Container>
           <div className="footer-row">
             <Row>
-              <Col md={4}>
+              <Col lg={4} md={6}>
                 <div className='footer-box-1'>
                   <div className='blue-title-sec'>
                     <h2>Come along for the ride</h2>
@@ -34,7 +34,7 @@ function Footer() {
                   </InputGroup>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col lg={4} md={6}>
                 <div className='footer-box-2'>
                     <Row>
                       <Col xs={6}>
@@ -56,7 +56,7 @@ function Footer() {
                     </Row>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col lg={4}>
                 <Accordion>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>About Hoverpro</Accordion.Header>
